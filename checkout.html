@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout - Fun Marketplace</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="checkout.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="header">
+        <div class="header-left">
+          <a href="index.html" class="back-btn">← Back to Shop</a>
+        </div>
+        <h1>🛒 Checkout</h1>
+        <div class="header-right"></div>
+      </header>
+
+      <main class="main">
+        <div class="checkout-container">
+          <div class="cart-section">
+            <h2>Your Cart</h2>
+            <div id="cart-items" class="cart-items">
+              <!-- Cart items will be dynamically generated -->
+            </div>
+            <div id="empty-cart" class="empty-cart" style="display: none">
+              <div class="empty-cart-icon">🛒</div>
+              <h3>Your cart is empty</h3>
+              <p>Add some amazing products to get started!</p>
+              <a href="index.html" class="btn btn-primary">Continue Shopping</a>
+            </div>
+          </div>
+
+          <div class="order-summary">
+            <h3>Order Summary</h3>
+            <div class="summary-row">
+              <span>Subtotal:</span>
+              <span id="subtotal">$0.00</span>
+            </div>
+            <div class="summary-row">
+              <span>Shipping:</span>
+              <span class="free-shipping">FREE 🎉</span>
+            </div>
+            <div class="summary-row">
+              <span>Tax:</span>
+              <span id="tax">$0.00</span>
+            </div>
+            <hr />
+            <div class="summary-row total">
+              <span>Total:</span>
+              <span id="total">$0.00</span>
+            </div>
+
+            <button id="checkout-btn" class="btn btn-checkout">
+              🎉 Complete Purchase
+            </button>
+
+            <div class="payment-info">
+              <p>💳 Secure payment powered by magic</p>
+              <p>🚚 Free shipping on all orders</p>
+              <p>↩️ 30-day return policy</p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="checkout.js"></script>
+  </body>
+</html>
