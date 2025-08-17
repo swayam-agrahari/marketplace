@@ -50,9 +50,6 @@ body {
   margin-bottom: 40px;
   padding: 20px 30px;
   background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  border-radius: var(--border-radius);
-  box-shadow: var(--shadow-md);
 }
 
 .header h1 {
